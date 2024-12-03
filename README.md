@@ -1,11 +1,11 @@
-## Mutation Program Test
+## XaviEH - A tool for Exception Handling (EH) Code Coverage and Mutation Analysis
 
-#### Operations Coverage
+#### Coverage Criteria
 
-- [x] Coverage General
-- [x] Coverage EH
+- [x] General Code Coverage (instruction, branch, and method)
+- [x] EH Code Coverage (throw instructions, instructions and branches within try, catch, and finally blocks, and methods with throws)
                                        
-#### Operations Mutants
+#### Mutation Operators
 
 - [x] CBD - Catch Block Deletion
 - [x] CBI - Catch Block Insertion
@@ -14,12 +14,6 @@
 - [x] CBR - Catch Block Replacement
 - [x] PTL - Placing Try Block Late
 - [x] TSD - Throw Statement Deletion
-
-#### Possibilities
-
-- [x] Automate the procurement of projects through Git
-- [x] JaCoCo to cover tests
-- [x] Run with Gradlew
 
 #### Usage
 
@@ -44,7 +38,7 @@
 - **noCloneRepository**: The file projects will be run without cloning the git repository.
 - **noVerifyProject**: Before the project is analyzed it is checked if it has already been run before, if positive, it will be skipped. This option causes the project to not be parsed.
 - Type of executions: 
-  - **ExecuteMutationsAndCoverage**: The mutants of the projects will be created and also their coverage using JaCoCo.
+  - **ExecuteMutationsAndCoverage**: The mutants will be created and also their coverage using JaCoCo.
   - **ExecuteEstatisticsCoverageEH**: information returned:
     - **MI**: Missed Instruction
     - **CI**: Covered Instruction 
